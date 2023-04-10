@@ -70,7 +70,7 @@ List<Parti> FordelMandater(List<Parti> StemmeData, int AntalMandaterTilFordeling
 		int Index = 0;
 		double Kvotient = 0;
 		
-		//Indre for-loop der sammeligner antal stemmer divideret med 1,2,3 osv. alt efter hvor mange mandater de allerede har fået tildelt.
+		//Indre for-loop der sammeligner antal stemmer divideret med 1,2,3 osv., alt efter hvor mange mandater partiet har fået tildelt.
 		for (int j = 0; j < Resultat.Count; j++)
 		{
 			double tempKvotient = Resultat[j].Stemmer / (Resultat[j].Mandater + 1);
