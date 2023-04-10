@@ -22,7 +22,7 @@ Undlad at skrive bogstaver når den spørger om antal stemmer, partier eller man
 Denne simple applikation kan beregne en mandatfordeling til et komunnevalg. Med tidskompleksiteten O(n^2).\
 Den kan tage imod en liste af partier og deres antal stemmer samt antallet af mandater der skal fordeles, og så fordele mandaterne.\
 Den bruger d'Hondts metode, som er en metode man bruger i mange demokratier i hele verden.\
-Det mest spæmndende er hvilke begrænsninger og antagleser applikationen har:
+Det mest spændende er hvilke begrænsninger og antagleser applikationen har:
 * Den går ud fra at partierne ikke er en del af nogen form for liste eller valg-forbund.
 * Hvis to partier har lige meget ret til en mandat, og denne mandat er den sidste der bliver fordelt skal der trækkes lod, det har denne applikation ikke implementeret.
 * Den virker kun i en konsol med C# lister, det ville være godt at give den API egnskaber og muligvis bruge en format som JSON til at sende valgdata.
