@@ -21,14 +21,20 @@ for (int i = 0; i < ValgResultat.Count; i++)
 }
 Console.WriteLine("");
 
-// Consol dialog med brugeres der giver mulighed for at teste programmet med sin egen data.
+
+
+
+
+
+// Consol dialog med bruger, der giver mulighed for at teste programmet med custom data.
+List<Parti> BrugerData = new List<Parti>();
 Console.WriteLine("Test programmet ved at indsætte din egen data!" + Environment.NewLine);
 Console.WriteLine("Hvor mange mandater skal der i alt fordeles?");
 
 int BrugerAntalMandater = int.Parse(Console.ReadLine());
 Console.WriteLine("Hvor mange partier har stillet op til valget?");
 int BrugerAntalPartier = int.Parse(Console.ReadLine());
-List<Parti> BrugerData = new List<Parti>();
+
 
 for (int i = 0; i < BrugerAntalPartier; i++)
 {
@@ -38,12 +44,18 @@ for (int i = 0; i < BrugerAntalPartier; i++)
 	int tempStemmer = int.Parse(Console.ReadLine());
 	BrugerData.Add(new Parti(tempNavn, tempStemmer));
 }
+//Udskriver resultat
 List<Parti> BrugerResultat = FordelMandater(BrugerData, BrugerAntalMandater);
 Console.WriteLine("Her er fordeling af mandater:" + Environment.NewLine);
 for (int i = 0; i < BrugerResultat.Count; i++)
 {
 	Console.WriteLine(BrugerResultat[i].Navn + " har fået: " + BrugerResultat[i].Stemmer + " stemmer og dermed opnået: " + BrugerResultat[i].Mandater + " mandater");
 }
+
+
+
+
+
 
 //Metode der tager udgangspunkt i D'Hondts metode, til mandatfordeling i danske kommuner.
 //Tager en liste af partier og deres respektive stemmer som input og returnere en ny liste med fordelte mandater tilføjet.
