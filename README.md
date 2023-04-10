@@ -19,7 +19,7 @@ Undlad at skrive bogstaver når den spørger om antal stemmer, partier eller man
 
 
 **Opgave 2.3**\
-Denne simple applikation kan beregne en mandatfordeling til et komunnevalg. Med tidskompleksiteten O(n^2).\
+Denne simple applikation kan beregne en mandatfordeling til et komunnevalg. Med tidskompleksiteten O(mn).\
 Den kan tage imod en liste af partier og deres antal stemmer samt antallet af mandater der skal fordeles, og så fordele mandaterne.\
 Den bruger d'Hondts metode, som er en metode man bruger i mange demokratier i hele verden.\
 Det mest spændende er hvilke begrænsninger og antagleser applikationen har:
