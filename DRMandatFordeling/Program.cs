@@ -44,7 +44,7 @@ for (int i = 0; i < BrugerAntalPartier; i++)
 	int tempStemmer = int.Parse(Console.ReadLine());
 	BrugerData.Add(new Parti(tempNavn, tempStemmer));
 }
-//Udskriver resultat
+//Fordeler mandater og udskriver resultat i console
 List<Parti> BrugerResultat = FordelMandater(BrugerData, BrugerAntalMandater);
 Console.WriteLine("Her er fordeling af mandater:" + Environment.NewLine);
 for (int i = 0; i < BrugerResultat.Count; i++)
